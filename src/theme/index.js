@@ -27,10 +27,10 @@ export default {
     },
   },
   fonts: {
-    body: 'Roboto',
+    body: 'Circular Std Book',
     // body:
     //   'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
-    heading: 'Roboto',
+    heading: 'Circular Std Book',
     monospace: 'Menlo, monospace',
   },
   fontSizes: [
