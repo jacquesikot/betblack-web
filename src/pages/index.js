@@ -62,6 +62,8 @@ export default function IndexPage() {
           <CtaOne />
 
           <CtaTwo />
+
+          <WhyUs />
         </Box>
       </Layout>
     </ThemeProvider>

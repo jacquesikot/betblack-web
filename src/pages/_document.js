@@ -17,7 +17,7 @@ class CustomDocument extends Document {
           <link
             href="http://fonts.cdnfonts.com/css/circular-std-book"
             rel="stylesheet"
-          ></link>
+          />
         </Head>
         <body>
           <Main />
