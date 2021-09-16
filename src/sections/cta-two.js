@@ -41,7 +41,7 @@ export default CtaTwo;
 const styles = {
   ctaTwo: {
     paddingTop: '40px',
-    paddingBottom: '100px',
+    paddingBottom: '70px',
     '@media(min-width: 1200px)': {},
     '@media(max-width:1024px)': {
       paddingBottom: 80,

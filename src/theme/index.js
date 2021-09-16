@@ -252,7 +252,6 @@ export default {
       fontWeight: 'bold',
     },
     input: {
-      borderRadius: 8,
       borderColor: 'borderColor',
       height: 60,
       '&:focus': {

@@ -22,12 +22,7 @@ const SubscribeUs = () => {
   return (
     <Box as="section" sx={styles.section} variant="section.subscribe">
       <Container>
-        <Box sx={styles.contentWrapper}>
-          <SectionHeading
-            sx={styles.heading}
-            title="Like our service? Subscribe us"
-            description="We have more than thousand of creative entrepreneurs and stat joining our business"
-          />
+        <Box sx={styles.contentWrapper} className="subcribe-box">
           <Box as="form" sx={styles.subscribe} onSubmit={handleSubmit}>
             <Flex sx={styles.inputGroup}>
               <Label htmlFor="email" variant="styles.srOnly">
@@ -68,17 +63,10 @@ export default SubscribeUs;
 
 const styles = {
   section: {
-    background: [
-      'none',
-      null,
-      null,
-      `#F8F0EA url(${illustration}) no-repeat center bottom / contain`,
-    ],
     pt: [8, null, null, null, 10],
     pb: [8, null, null, 9, 11],
   },
   contentWrapper: {
-    backgroundColor: '#fff',
     borderRadius: 15,
     p: [null, null, null, '40px 110px 50px', '50px 50px', '40px'],
     gap: '50px',

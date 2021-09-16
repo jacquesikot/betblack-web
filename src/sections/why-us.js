@@ -67,7 +67,7 @@ const WhyUs = () => {
                 <Text as="p" sx={styles.description}>
                   {item.description}
                 </Text>
-                {/* <Box sx={styles.list}>
+                <Box sx={styles.list}>
                   {item.list.map((item, i) => (
                     <Box key={i} className="list-item">
                       <RiCheckboxCircleFill
@@ -78,10 +78,10 @@ const WhyUs = () => {
                       <span>{item}</span>
                     </Box>
                   ))}
-                </Box> */}
-                {/* <Box sx={styles.learnMore}>
+                </Box>
+                <Box sx={styles.learnMore}>
                   <LearnMore path={item.moreLink} label="Explore more" />
-                </Box> */}
+                </Box>
               </Box>
               <Box sx={styles.illustration}>
                 <Image src={item.image} alt="illustration" />

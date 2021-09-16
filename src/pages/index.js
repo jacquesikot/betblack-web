@@ -22,6 +22,8 @@ import InfoSection from 'sections/InfoSection';
 import CtaOne from 'sections/cta-one';
 import CtaTwo from 'sections/cta-two';
 import ColorBg from 'assets/images/color_patch_bg.png';
+import Slider from 'components/Slider/Slider';
+import Subscribe from 'sections/subscribe';
 
 export default function IndexPage() {
   return (
@@ -63,7 +65,11 @@ export default function IndexPage() {
 
           <CtaTwo />
 
-          <WhyUs />
+          <Slider />
+
+          <Subscribe />
+
+          <Box sx={{ height: '400px' }} />
         </Box>
       </Layout>
     </ThemeProvider>
