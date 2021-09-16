@@ -40,11 +40,9 @@ export default CtaTwo;
 
 const styles = {
   ctaTwo: {
-    paddingTop: '80px',
+    paddingTop: '40px',
     paddingBottom: '100px',
-    '@media(min-width: 1200px)': {
-      paddingTop: '100px',
-    },
+    '@media(min-width: 1200px)': {},
     '@media(max-width:1024px)': {
       paddingBottom: 80,
     },
@@ -59,7 +57,7 @@ const styles = {
       marginTop: '40px',
     },
     img: {
-      maxWidth: '800px',
+      maxWidth: '750px',
       // position: 'relative',
       // right: '100px',
       // bottom: '45px',
@@ -70,7 +68,7 @@ const styles = {
       },
     },
     content: {
-      paddingLeft: '114px',
+      marginTop: '150px',
       '@media(max-width:1024px)': {
         paddingLeft: 0,
         maxWidth: 475,
@@ -80,6 +78,7 @@ const styles = {
       },
       '@media(max-width:575px)': {
         maxWidth: '91%',
+        marginTop: '0px',
       },
     },
     blockTitle: {
@@ -93,12 +92,12 @@ const styles = {
       },
     },
     text: {
-      fontSize: [18, null, null, 20],
-      lineHeight: 2.33,
+      fontFamily: 'Circular Std Book',
+      fontSize: [20, null, null, 22],
+      lineHeight: 2,
       color: 'white',
       marginBottom: 25,
       mb: [20, null, null, null, null],
-      whiteSpace: ['normal', null, null, null, 'pre-line'],
     },
   },
 };

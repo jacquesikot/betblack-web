@@ -84,7 +84,7 @@ p {
 
 .content-1-heading-2 {
   font-size: clamp(2rem, calc(3.5vw + 1rem), 3rem);
-  line-height: 1.1;
+  line-height: 1.2;
   background: -webkit-linear-gradient(#cf94fe, #a0ecfd);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

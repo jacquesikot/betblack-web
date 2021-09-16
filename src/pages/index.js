@@ -21,6 +21,7 @@ import { jsx, Box } from 'theme-ui';
 import InfoSection from 'sections/InfoSection';
 import CtaOne from 'sections/cta-one';
 import CtaTwo from 'sections/cta-two';
+import ColorBg from 'assets/images/color_patch_bg.png';
 
 export default function IndexPage() {
   return (
@@ -59,6 +60,7 @@ export default function IndexPage() {
           className="main-content"
         >
           <CtaOne />
+
           <CtaTwo />
         </Box>
       </Layout>

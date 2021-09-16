@@ -99,7 +99,7 @@ const styles = {
     },
     text: {
       fontFamily: 'Circular Std Book',
-      fontSize: [20, null, null, 22],
+      fontSize: [18, null, null, 22],
       lineHeight: 2,
       color: 'white',
       marginBottom: 25,
