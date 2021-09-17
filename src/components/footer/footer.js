@@ -1,102 +1,104 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { jsx, Box, Text, Container } from 'theme-ui';
-import Logo from 'components/logo';
+import { jsx, Box, Grid, Container, Image, Heading, Text } from 'theme-ui';
 import { Link } from 'components/link';
-import Widget from './widget';
-import { menuItems } from './footer.data';
-import { rgba } from 'polished';
+import data from './footer.data';
+import FooterLogo from 'assets/images/footer-logo.png';
+import FooterBg from 'assets/images/footer-bg.png';
 
 export default function Footer() {
   return (
-    <Box as="footer" sx={styles.footer}>
+    <footer sx={styles.footer}>
       <Container>
-        <Box sx={styles.footerTopInner}>
-          <Box sx={styles.about}>
-            <Box sx={styles.logo}>
-              <Logo />
-            </Box>
-            <Box sx={styles.terms}>
-              <Link path="#!">Terms of use</Link>
-              <Text as="span">|</Text>
-              <Link path="#!">Privacy</Link>
-            </Box>
-            <Text as="p" sx={styles.copyright}>
-              Copyright by {new Date().getFullYear()} RedQ, Inc
-            </Text>
+        {/* End of footer widgets area */}
+        <Box sx={styles.footer.footerBottomArea}>
+          <Box
+            sx={{
+              width: [
+                '120px',
+                '120px',
+                '120px',
+                '120px',
+                '120px',
+                '150px',
+                '150px',
+                '200px',
+              ],
+            }}
+          >
+            <Link path="/">
+              <Image src={FooterLogo} alt="Logo" />
+            </Link>
           </Box>
-          {menuItems.map(({ id, title, items }) => (
-            <Widget key={id} title={title} items={items} />
-          ))}
+          <Box sx={styles.footer.menus}>
+            <nav>
+              {data.menuItem.map(({ path, label }, i) => (
+                <Link
+                  path={path}
+                  key={i}
+                  label={label}
+                  sx={styles.footer.link}
+                />
+              ))}
+            </nav>
+          </Box>
         </Box>
       </Container>
-    </Box>
+    </footer>
   );
 }
 
 const styles = {
   footer: {
-    pt: [8],
-    pb: [8],
-  },
-  footerTopInner: {
-    gap: [30, null, 50, '20px 50px', 17, 50],
-    display: ['grid'],
-    gridTemplateColumns: [
-      'repeat(2, 1fr)',
-      null,
-      null,
-      'repeat(4, 1fr)',
-      'repeat(5, 1fr)',
-    ],
-  },
-  footerInner: {
-    borderTop: `1px solid #D9E0E7`,
-    display: ['block', null, 'flex'],
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    padding: '35px 0 40px',
-  },
-  about: {
-    display: [null, null, null, 'grid', 'block'],
-    gridTemplateColumns: '205px 1fr 1fr',
-    alignItems: ['center'],
-    gridRow: ['3/4', null, '1/1', '3/4', 'unset'],
-    gridColumn: ['1/3', null, '1/2', '1/5', 'unset'],
-  },
-  logo: {
-    display: ['flex'],
-    justifyContent: ['center', null, null, 'unset'],
-    gridColumn: '1/2',
-  },
-  terms: {
-    display: ['flex'],
-    gridColumn: '3/4',
-    alignItems: ['center', null, null, null, 'flex-start', 'center'],
-    flexDirection: ['row', null, null, null, 'column', 'row'],
-    justifyContent: [
-      'center',
-      null,
-      'flex-start',
-      'center',
-      null,
-      'flex-start',
-    ],
-    mt: [4, null, null, 0, 4],
-    a: {
-      color: 'heading',
+    backgroundImage: [`url(${FooterBg})`],
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    backgroundColor: '#000',
+    zIndex: 1,
+    footerBottomArea: {
+      borderTopColor: 'border_color',
+      display: 'flex',
+      pt: [7, null, '330px'],
+      pb: ['40px', null, '100px'],
+      textAlign: 'center',
+      flexDirection: 'row',
+      justifyContent: 'space-between',
+      '@media(max-width:800px)': {
+        flexDirection: 'column',
+        alignItems: 'center',
+        pt: [7, null, '100px'],
+        height: '300px',
+      },
     },
-    span: {
-      display: ['inline-flex', null, null, null, 'none', 'inline-flex'],
-      m: ['0 10px'],
+    menus: {
+      mt: [3, 4],
+      mb: 2,
+      nav: {
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        flexWrap: 'wrap',
+      },
     },
-  },
-  copyright: {
-    color: rgba('#0F2137', 0.6),
-    fontSize: ['14px'],
-    mt: [3, null, null, -31, 3],
-    mr: [null, null, null, 'auto', 'unset'],
-    gridColumn: '2/3',
-    textAlign: ['center', null, 'left', 'center', 'left'],
+
+    link: {
+      fontSize: [1, '18px'],
+      color: 'text',
+      fontWeight: '900',
+      mb: 2,
+      cursor: 'pointer',
+      transition: 'all 0.35s',
+      display: 'block',
+      textDecoration: 'none',
+      lineHeight: [1.5, null, 1.8],
+      px: [2, null, 4],
+      ':hover': {
+        color: 'primary',
+      },
+    },
+    copyright: {
+      fontSize: [1, '15px'],
+      width: '100%',
+    },
   },
 };
