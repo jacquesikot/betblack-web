@@ -18,6 +18,13 @@ class CustomDocument extends Document {
             href="http://fonts.cdnfonts.com/css/circular-std-book"
             rel="stylesheet"
           />
+
+          <link
+            rel="preload"
+            href="http://fonts.cdnfonts.com/css/circular-std-book"
+            as="font"
+            crossOrigin
+          />
         </Head>
         <body>
           <Main />
