@@ -48,12 +48,12 @@ export default function TabItemFeature({
             sx={{
               color: descColor === 'white' ? '#ffff' : '#959595',
               fontSize: [
-                '12px',
-                '12px',
-                '12px',
-                '12px',
-                '12px',
-                '12px',
+                '15px',
+                '15px',
+                '15px',
+                '15px',
+                '15px',
+                '15px',
                 null,
                 1,
               ],

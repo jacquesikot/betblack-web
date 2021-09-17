@@ -52,7 +52,7 @@ export default function TextFeature({
             className="description"
             sx={{
               color: descColor === 'white' ? '#ffff' : '#959595',
-              fontSize: ['12px', 2, null, null, null, '17px', null, 3],
+              fontSize: ['15px', 2, null, null, null, '17px', null, 3],
               fontWeight: 400,
               lineHeight: [1.5, null, null, 2, null, '2.2'],
               mb: '10px',
@@ -66,7 +66,7 @@ export default function TextFeature({
             className="description"
             sx={{
               color: descColor === 'white' ? '#ffff' : '#959595',
-              fontSize: ['12px', 2, null, null, null, '17px', null, 3],
+              fontSize: ['15px', 2, null, null, null, '17px', null, 3],
               fontWeight: 400,
               lineHeight: [1.85, null, null, 2, null, '2.2'],
               mb: '10px',
@@ -80,7 +80,7 @@ export default function TextFeature({
             className="description"
             sx={{
               color: descColor === 'white' ? '#ffff' : '#959595',
-              fontSize: ['12px', 2, null, null, null, '17px', null, 3],
+              fontSize: ['15px', 2, null, null, null, '17px', null, 3],
               fontWeight: 400,
               lineHeight: [1.85, null, null, 2, null, '2.2'],
               mb: '10px',
