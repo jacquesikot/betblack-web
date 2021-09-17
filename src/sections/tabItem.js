@@ -4,7 +4,7 @@ import { jsx, Container, Box } from 'theme-ui';
 import TextFeature from 'components/text-feature';
 import Image from 'components/image';
 import Img3 from 'assets/images/slider_1.png';
-import Rating from 'assets/images/Rating.png';
+import Rating from 'assets/images/rating.png';
 import ComingSoon from 'assets/images/coming-soon.png';
 
 export default function TabItem() {
