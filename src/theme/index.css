@@ -188,7 +188,7 @@ body {
   transform: translateY(-60%);
 }
 .next {
-  top: 60%;
+  top: 50%;
   right: 60px;
   transform: translateY(-60%);
   z-index: 1;
@@ -212,7 +212,7 @@ body {
   background: #65def6;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
   .app-store-img {
     width: 300px;
   }
@@ -230,11 +230,20 @@ body {
 
   .content-1-heading {
     margin-top: 20px;
-    font-size: clamp(2rem, calc(3.5vw + 1rem), 2.5rem);
+    font-size: clamp(1.5rem, calc(3vw + 1rem), 2rem);
   }
 
   .content-1-heading-2 {
     margin-top: 20px;
     font-size: clamp(1.5rem, calc(3vw + 1rem), 2rem);
+  }
+
+  .next {
+    display: none;
+  }
+
+  .dot {
+    width: 50px;
+    height: 5px;
   }
 }

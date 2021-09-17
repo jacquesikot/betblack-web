@@ -26,6 +26,7 @@ import Slider from 'components/Slider/Slider';
 import Subscribe from 'sections/subscribe';
 import Panel1 from 'sections/panel1';
 import Panel2 from 'sections/panel2';
+import BlueBg from 'assets/images/blue-bg.png';
 
 export default function IndexPage() {
   return (
@@ -66,11 +67,19 @@ export default function IndexPage() {
         >
           <Panel1 />
 
-          <Panel2 />
+          <Box
+            sx={{
+              backgroundImage: [`url(${BlueBg})`],
+              backgroundPosition: '50% 50%',
+              backgroundRepeat: 'no-repeat',
+            }}
+          >
+            <Panel2 />
+          </Box>
 
           <Slider />
 
-          {/* <Subscribe /> */}
+          <Subscribe />
 
           <Box sx={{ height: '400px' }} />
         </Box>

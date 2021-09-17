@@ -5,6 +5,7 @@ import TextFeature from 'components/text-feature';
 import Image from 'components/image';
 
 import Img2 from 'assets/images/img-2.png';
+import BG from 'assets/images/blue-bg.png';
 
 export default function Panel2() {
   return (
@@ -42,7 +43,7 @@ const styles = {
     px: [0, null, '30px', 0],
     textAlign: ['center', null, null, 'left'],
     width: ['100%', '80%', null, 290, 400, 430, null, 480],
-    pb: ['50px', '60px', null, 0],
+    pb: [0, '60px', null, 0],
     mx: ['auto', null, null, 0],
     '.description': {
       pr: [0, null, 6, 7, 6],
@@ -51,7 +52,7 @@ const styles = {
   thumbnail: {
     display: 'inline-flex',
     position: 'relative',
-    right: [0, 0, 0, -50, -80, -120, -120],
+    right: [0, 0, 0, -50, -80, -120, -122],
     mr: 'auto',
     ml: ['auto', null, null, null, 7],
     '> img': {

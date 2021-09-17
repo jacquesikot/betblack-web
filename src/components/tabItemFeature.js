@@ -4,18 +4,13 @@ import React from 'react';
 import { jsx, Box, Heading, Text, Button, Link, Image } from 'theme-ui';
 import ComingSoon from 'assets/images/coming-soon.png';
 
-export default function TextFeature({
-  subTitle,
+export default function TabItemFeature({
   title,
   image,
   description,
   description1,
-  description2,
-  description3,
   descColor,
   comingSoon,
-  btnName,
-  btnURL = '#',
   type,
 }) {
   return (
@@ -27,7 +22,7 @@ export default function TextFeature({
         {image && (
           <Box
             sx={{
-              width: ['40%', '50%', '50%', '50%', '200px'],
+              width: ['40%', '50%', '50%', '50%', '150px'],
               marginBottom: 2,
             }}
           >
@@ -52,41 +47,22 @@ export default function TextFeature({
             className="description"
             sx={{
               color: descColor === 'white' ? '#ffff' : '#959595',
-              fontSize: ['12px', 2, null, null, null, '17px', null, 3],
+              fontSize: [
+                '12px',
+                '12px',
+                '12px',
+                '12px',
+                '12px',
+                '12px',
+                null,
+                1,
+              ],
               fontWeight: 400,
               lineHeight: [1.5, null, null, 2, null, '2.2'],
               mb: '10px',
             }}
           >
             {description1}
-          </Text>
-
-          <Text
-            as="p"
-            className="description"
-            sx={{
-              color: descColor === 'white' ? '#ffff' : '#959595',
-              fontSize: ['12px', 2, null, null, null, '17px', null, 3],
-              fontWeight: 400,
-              lineHeight: [1.85, null, null, 2, null, '2.2'],
-              mb: '10px',
-            }}
-          >
-            {description2}
-          </Text>
-
-          <Text
-            as="p"
-            className="description"
-            sx={{
-              color: descColor === 'white' ? '#ffff' : '#959595',
-              fontSize: ['12px', 2, null, null, null, '17px', null, 3],
-              fontWeight: 400,
-              lineHeight: [1.85, null, null, 2, null, '2.2'],
-              mb: '10px',
-            }}
-          >
-            {description3}
           </Text>
         </>
       )}
@@ -134,7 +110,7 @@ const styles = {
       letterSpacing: ['1.5px', null, '2px'],
     },
     title: {
-      fontSize: ['23px', null, '23px', '22px', '28px', '34px', null, '40px'],
+      fontSize: ['23px', null, '23px', '23px', '23px', '25px', null, '30px'],
       color: 'white',
       lineHeight: [1.3, null, null, null, 1.2],
       fontWeight: '700',
@@ -153,9 +129,10 @@ const styles = {
     width: '90%',
     backgroundColor: '#202020',
     height: 2,
+    marginTop: 1,
   },
   comingSoon: {
-    width: ['30%', '40%', '40%', '40%', '150px'],
+    width: ['30%', '40%', '40%', '40%', '100px'],
     marginBottom: 2,
     marginTop: 5,
   },

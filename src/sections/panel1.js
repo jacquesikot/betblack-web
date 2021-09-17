@@ -55,7 +55,7 @@ const styles = {
     flexShrink: 0,
     px: [0, null, '30px', 0],
     textAlign: ['center', null, null, 'left'],
-    width: ['100%', '80%', null, 340, 550, 580, null, 630],
+    width: ['100%', '80%', null, 400, 550, 580, null, 630],
     pb: ['50px', '60px', null, 0],
     mx: ['auto', null, null, 0],
     '.description': {
