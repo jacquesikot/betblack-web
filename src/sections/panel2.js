@@ -3,42 +3,25 @@
 import { jsx, Container, Box } from 'theme-ui';
 import TextFeature from 'components/text-feature';
 import Image from 'components/image';
-import Img3 from 'assets/images/slider_1.png';
-import Rating from 'assets/images/Rating.png';
-import ComingSoon from 'assets/images/coming-soon.png';
 
-export default function TabItem() {
+import Img2 from 'assets/images/img-2.png';
+
+export default function Panel2() {
   return (
     <section sx={{ variant: 'section.coreFeature' }}>
       <Container sx={styles.containerBox}>
         <Box sx={styles.contentBox}>
           <TextFeature
-            image={Rating}
-            title="8Ball Pool"
+            descColor="white"
+            title="Roadmap Coming Soon"
             description="hi"
-            description1={`Stake & earn real money when you play games with your friends and pals. Playing with friends is easy: sign and you’ll be able to challenge your friends straight from the game.`}
-            type={1}
+            description1={`Stake & earn real money when you play 
+            games with your friends and pals.`}
+            type={3}
           />
-          <Box
-            sx={{
-              width: '90%',
-              backgroundColor: '#202020',
-              height: 2,
-              marginTop: -10,
-            }}
-          />
-          <Box
-            sx={{
-              width: ['30%', '40%', '40%', '40%', '150px'],
-              marginBottom: 2,
-              marginTop: 5,
-            }}
-          >
-            <Image src={ComingSoon} />
-          </Box>
         </Box>
         <Box sx={styles.thumbnail}>
-          <Image src={Img3} alt="Thumbnail" />
+          <Image src={Img2} alt="Thumbnail" />
         </Box>
       </Container>
     </section>

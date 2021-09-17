@@ -255,8 +255,8 @@ export default {
       borderColor: 'borderColor',
       height: 60,
       '&:focus': {
-        borderColor: 'primary',
-        boxShadow: (t) => `0 0 0 2px ${t.colors.primary}`,
+        borderColor: '#65DEF6',
+        // boxShadow: (t) => `0 0 0 2px ${t.colors.primary}`,
         outline: 'none',
       },
     },

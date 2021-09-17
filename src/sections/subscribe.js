@@ -90,7 +90,7 @@ export default function Subscribe() {
                     id="email"
                     type="email"
                     className="email-input"
-                    placeholder="Enter Email address"
+                    placeholder="Email Address"
                   />
                   <Button variant="secondary">Subscribe</Button>
                 </Flex>
@@ -111,7 +111,7 @@ const styles = {
     mt: 50,
   },
   contentBoxInner: {
-    width: ['100%', null, '540px', '600px'],
+    width: ['100%', null, '540px', '900px'],
     mx: 'auto',
     mt: -1,
     px: [3, 5],
@@ -131,16 +131,22 @@ const styles = {
     px: [0, null, 5],
   },
   subscribe: {
+    marginTop: '70px',
     '.email-input': {
       mr: [0, null, null, '15px'],
-      minHeight: ['50px', '50px', '60px'],
+      minHeight: ['50px', '50px', '70px'],
       backgroundColor: 'white',
+      borderRadius: '15px',
+      width: ['100%', null, '100%', '1000px'],
+      pl: '40px',
     },
     button: {
-      minHeight: ['50px', '50px', '60px'],
+      minHeight: ['50px', '50px', '70px'],
       fontSize: ['14px', '14px', '16px'],
       mt: ['15px', null, null, 0],
       backgroundColor: '#000',
+      borderRadius: '15px',
+      width: ['100%', null, '100%', '350px'],
     },
   },
   inputGroup: {

@@ -24,6 +24,8 @@ import CtaTwo from 'sections/cta-two';
 import ColorBg from 'assets/images/color_patch_bg.png';
 import Slider from 'components/Slider/Slider';
 import Subscribe from 'sections/subscribe';
+import Panel1 from 'sections/panel1';
+import Panel2 from 'sections/panel2';
 
 export default function IndexPage() {
   return (
@@ -58,16 +60,17 @@ export default function IndexPage() {
             backgroundRepeat: 'no-repeat',
             backgroundColor: '#000',
             position: 'relative',
+            overflowX: 'hidden',
           }}
           className="main-content"
         >
-          <CtaOne />
+          <Panel1 />
 
-          <CtaTwo />
+          <Panel2 />
 
           <Slider />
 
-          <Subscribe />
+          {/* <Subscribe /> */}
 
           <Box sx={{ height: '400px' }} />
         </Box>

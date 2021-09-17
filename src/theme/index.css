@@ -7,6 +7,10 @@ p {
   margin: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .tab-pane {
   width: 100px;
   height: 10px;
@@ -81,6 +85,7 @@ p {
   -webkit-text-fill-color: transparent;
   font-family: 'Circular Std Bold', sans-serif;
   font-weight: 500;
+  margin-bottom: 40px;
 }
 
 .content-1-heading-2 {
@@ -92,6 +97,7 @@ p {
   font-family: 'Roboto';
   font-family: 'Circular Std Bold', sans-serif;
   font-weight: 500;
+  margin-bottom: 20px;
 }
 
 .subscribe-box {
@@ -185,6 +191,7 @@ p {
   top: 60%;
   right: 60px;
   transform: translateY(-60%);
+  z-index: 1;
 }
 
 .container-dots {
@@ -205,7 +212,7 @@ p {
   background: #65def6;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
   .app-store-img {
     width: 300px;
   }
@@ -219,5 +226,15 @@ p {
 
   .container-dots {
     left: 70%;
+  }
+
+  .content-1-heading {
+    margin-top: 20px;
+    font-size: clamp(2rem, calc(3.5vw + 1rem), 2.5rem);
+  }
+
+  .content-1-heading-2 {
+    margin-top: 20px;
+    font-size: clamp(1.5rem, calc(3vw + 1rem), 2rem);
   }
 }
