@@ -6,6 +6,11 @@ import data from './footer.data';
 import FooterLogo from 'assets/images/footer-logo.png';
 import FooterBg from 'assets/images/footer-bg.png';
 
+import Facebook from 'assets/images/facebook.png';
+import Twitter from 'assets/images/twitter.png';
+import Instagram from 'assets/images/instagram.png';
+import Linkedin from 'assets/images/linkedin.png';
+
 export default function Footer() {
   return (
     <footer sx={styles.footer}>
@@ -41,6 +46,31 @@ export default function Footer() {
                 />
               ))}
             </nav>
+            <Box
+              sx={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                flexWrap: 'wrap',
+                width: '60%',
+              }}
+            >
+              <Box sx={{ width: '15px' }}>
+                <Image src={Facebook} />
+              </Box>
+
+              <Box sx={{ width: '30px' }}>
+                <Image src={Instagram} />
+              </Box>
+
+              <Box sx={{ width: '30px' }}>
+                <Image src={Twitter} />
+              </Box>
+
+              <Box sx={{ width: '30px' }}>
+                <Image src={Linkedin} />
+              </Box>
+            </Box>
           </Box>
         </Box>
       </Container>
@@ -73,11 +103,18 @@ const styles = {
     menus: {
       mt: [3, 4],
       mb: 2,
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
       nav: {
         display: 'flex',
         alignItems: 'center',
-        justifyContent: 'center',
+        justifyContent: 'space-between',
         flexWrap: 'wrap',
+        mb: '40px',
+        '@media(max-width:800px)': {
+          mb: '10px',
+        },
       },
     },
 
